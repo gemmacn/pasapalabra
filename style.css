@@ -1,0 +1,108 @@
+
+
+*{
+	font-family:'VT323', monospace;
+	background-color: black;
+}
+
+h1{
+	font-size: 2.8em;
+	color:#00FE00;
+}
+
+
+h1 span{
+animation: text-flicker 1s  infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:1;
+  }
+  50%{opacity:0;}
+  100%{
+  	opacity:1;
+  }
+}
+
+#letters{
+	margin-left: auto;
+	margin-right:auto;
+	width:50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+	align-content:center;
+	margin-bottom:5%
+
+}
+
+#letters span{
+	border: 1px solid #00FE00;;
+	padding:1.7%;
+	margin:6px;
+	font-size: 1.8em;
+	color: #00FE00;;
+
+}
+#juego{margin-left: auto;
+	margin-right:auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+	align-content:center;
+	}
+
+	#definicion{
+		border: 1px solid black;
+		width:30%;
+	font-size: 1.5em;
+	margin-bottom:2%;
+	background-color: black;
+	color:#00FE00;
+	}
+
+
+	#word {
+		width:40%;
+	font-size:1.5em;
+	background-color: black;
+	color:#00FE00;
+	margin-bottom:2%;
+		
+	}
+	#contiene{font-size:1.6em;
+	background-color: black;
+	color:#00FE00;
+	margin-bottom:2%;
+	padding:0.8%;}
+
+	#send, #pasapalabra{
+	font-size:1.6em;
+	background-color: black;
+	color:#00FE00;
+	margin-bottom:2%;
+	border:1px solid #00FE00;
+	padding:0.8%;}
+
+#pasapalabra{
+	margin-left: 60%;
+}
+#pasapalabra:hover{
+	color:black;
+	background-color: #00FE00;
+}
+#send:hover{
+	color:black;
+	background-color: #00FE00;
+}
+
+.modal{
+	display:none;
+	margin:5px solid black;
+	color:#00FE00;
+	background-color: black;
+}
